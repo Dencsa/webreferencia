@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Szakdolgozat</title>
+  <link rel="stylesheet" href="C:\Users\enyed\github\WebDesign\Css\style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="C:\Users\enyed\github\WebDesign\images\logo-via-logohub.png">
+</head>
+
+<body>
+  <section>
+    <div class="hero-image">
+      <a target="_blank" href="http://hu.econ.ubbcluj.ro"><img class="headerimg" src="C:\Users\enyed\github\WebDesign\images\headerlogo.png" alt="logo"></a>
+      <a target="_blank" href="https://www.ubbcluj.ro/hu/"><img class="headerimg2" src="C:\Users\enyed\github\WebDesign\images\logo_UBB_ro.png" alt="logoUBB"></a>
+      <div class="hero-text">
+        <h1 class="titletext">Témaválasztás</h1>
+      </div>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </section>
+  <div class="navbar">
+    <a href="C:\Users\enyed\github\WebDesign\html\index.html"><i class="fa fa-fw fa-home"></i> Főoldal</a>
+    <a class="active" href="C:\Users\enyed\github\WebDesign\html\tema.html"><i class="fa fa-fw fa-book"></i> Témaválasztás</a>
+    <a href="C:\Users\enyed\github\WebDesign\html\hataridok.html"><i class="fa fa-fw fa-calendar"></i> Határidők</a>
+    <a href="C:\Users\enyed\github\WebDesign\html\admin.html"><i class="fa fa-fw fa-question"></i> GY.I.K.</a>
+    <a href="C:\Users\enyed\github\WebDesign\html\kapcs.html"><i class="fa fa-fw fa-envelope-open"></i> Kapcsolat</a>
+  </div>
+  <div class="urlap">
+    <h3>A szakdolgozatodnak rendelkeznie kell egy témával, illetve szükséged van egy mentorra, akit a tanárok közül választhatsz!</h3>
+    <h4>Témavezető tanárokat<a target="_blank" href="http://hu.econ.ubbcluj.ro/data/pdf/Vegzosoknek/Temavalasztas%20leosztas%202019.pdf"> itt</a> láthatod! </h4>
+    <h4>Témajavaslatokat <a target="_blank" href="http://hu.econ.ubbcluj.ro/data/pdf/Vegzosoknek/Szakdolgozat%20tema%20javaslatok%202019-2020.pdf"> itt</a> olvashatsz!</h4>
+    <h4>Ezek után az űrlapot kell kitöltened!</h4>
+    <p> Űrlapot elérheted itt: <button class="btn2">Mutatása</button> <button class="btn1">Elrejtése</button></p>
+    <!--SCRIPTEK-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script src="C:\Users\enyed\github\WebDesign\Javascript\validate.js"></script>
+    <!--elrejt/megjelenít-->
+    <script>
+      $(document).ready(function() {
+        $(".btn1").click(function() {
+          $("form").hide();
+        });
+        $(".btn2").click(function() {
+          $("form").show();
+        });
+      });
+    </script>
+    <!--SCRIPTEK VÉGE-->
+    </form>
+    <form name="form" class="temaform" id="temavform" method="get" action="" onsubmit="return validate()">
+      <fieldset>
+        <legend class="temal">Kérlek töltsd ki az űrlapot a megfelelő adatokkal!</legend>
+        <p>
+          <label for="name">Családnév(minimum 2 karakter):</label>
+          <br>
+          <input id="cname" type="name" name="cname" minlength="2" type="text" required>
+        </p>
+        <p>
+          <label for="name">Keresztnév(minimum 2 karakter):</label>
+          <br>
+          <input id="cname" type="name" name="cname" minlength="2" type="text" required>
+        </p>
+
+        <input type="radio" name="szesszio" value="Téli szesszió" required>
+        <label for="teli">Téli szesszió</label><br>
+        <input type="radio" name="szesszio" value="Nyári szesszió">
+        <label for="nyari">Nyári szesszió</label><br>
+
+        <p>
+          <label for="teachers">Első tanár választása:</label>
+          <br>
+          <select name="Tanarok" id="cname" required>
+            <option value="tanar1">DR. ALT MÓNIKA-ANETTA, DOCENS</option>
+            <option value="tanar2">DR. AVORNICULUI MIHAI-CONSTANTIN, ADJUNKTUS</option>
+            <option value="tanar3">DR. GYÖRFY LEHEL-ZOLTÁN, DOCENS</option>
+            <option value="tanar4">DR. HORVÁTH RÉKA, ADJUNKTUS</option>
+            <option value="tanar5">DR. JUHÁSZ JÁCINT-ATTILA, ADUNKTUS</option>
+            <option value="tanar6">DR. KEREKES KINGA, DOCENS</option>
+            <option value="tanar7">DR. KOVÁCS GYÖNGYVÉR-EMESE, ADJUNKTUS</option>
+            <option value="tanar8">DR. NAGY BÁLINT-ZSOLT, DOCENS</option>
+            <option value="tanar9">DR. RÁCZ BÉLA-GERGELY, ADJUNKTUS</option>
+            <option value="tanar10">DR. SAPLACAN ZSUZSA, ADJUNKTUS</option>
+            <option value="tanar11">DR. SEER LÁSZLÓ-CSABA, ADJUNKTUS</option>
+            <option value="tanar12">DR. SZABÓ TÜNDE PETRA, DOCENS</option>
+            <option value="tanar13">DR. SZÁSZ LEVENTE, EGYETEMI TANÁR</option>
+          </select>
+        </p>
+        <p>
+          <label for="name2">Első téma (minimum 5 karakter):</label>
+          <br>
+          <input id="cname" name="tema1" minlength="5" type="text" required>
+        </p>
+        <p>
+          <label for="teachers2">Első tanár választása:</label>
+          <br>
+          <select name="Tanarok2" id="cname" required>
+            <option value="tanar1">DR. ALT MÓNIKA-ANETTA, DOCENS</option>
+            <option value="tanar2">DR. AVORNICULUI MIHAI-CONSTANTIN, ADJUNKTUS</option>
+            <option value="tanar3">DR. GYÖRFY LEHEL-ZOLTÁN, DOCENS</option>
+            <option value="tanar4">DR. HORVÁTH RÉKA, ADJUNKTUS</option>
+            <option value="tanar5">DR. JUHÁSZ JÁCINT-ATTILA, ADUNKTUS</option>
+            <option value="tanar6">DR. KEREKES KINGA, DOCENS</option>
+            <option value="tanar7">DR. KOVÁCS GYÖNGYVÉR-EMESE, ADJUNKTUS</option>
+            <option value="tanar8">DR. NAGY BÁLINT-ZSOLT, DOCENS</option>
+            <option value="tanar9">DR. RÁCZ BÉLA-GERGELY, ADJUNKTUS</option>
+            <option value="tanar10">DR. SAPLACAN ZSUZSA, ADJUNKTUS</option>
+            <option value="tanar11">DR. SEER LÁSZLÓ-CSABA, ADJUNKTUS</option>
+            <option value="tanar12">DR. SZABÓ TÜNDE PETRA, DOCENS</option>
+            <option value="tanar13">DR. SZÁSZ LEVENTE, EGYETEMI TANÁR</option>
+          </select>
+        </p>
+        <p>
+          <label for="cname">Második téma (minimum 5 karakter):</label>
+          <br>
+          <input id="cname" name="tema2" minlength="5" type="text" required>
+        </p>
+        <p>
+          <label for="checkBox">Elfogadom az adfelhasználási feltételeket.</label>
+          <input type="checkbox" id="cbox">
+        </p>
+        <p>
+          <input class="submit" type="submit" value="Küldés">
+        </p>
+      </fieldset>
+    </form>
+  </div>
+  <img class="professor" src="C:\Users\enyed\github\WebDesign\images\professor.png" alt="professor">
+
+  </div>
+</body>
+
+</html>

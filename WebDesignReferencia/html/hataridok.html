@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Szakdolgozat</title>
+  <link rel="stylesheet" href="C:\Users\enyed\github\WebDesign\Css\style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="C:\Users\enyed\github\WebDesign\images\logo-via-logohub.png">
+</head>
+
+<body>
+  <section>
+    <div class="hero-image">
+      <a target="_blank" href="http://hu.econ.ubbcluj.ro"><img class="headerimg" src="C:\Users\enyed\github\WebDesign\images\headerlogo.png" alt="logo"></a>
+      <a target="_blank" href="https://www.ubbcluj.ro/hu/"><img class="headerimg2" src="C:\Users\enyed\github\WebDesign\images\logo_UBB_ro.png" alt="logoUBB"></a>
+      <div class="hero-text">
+        <h1 class="titletext">Határidők</h1>
+      </div>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </section>
+  <div class="navbar">
+    <a href="C:\Users\enyed\github\WebDesign\html\index.html"><i class="fa fa-fw fa-home"></i> Főoldal</a>
+    <a href="C:\Users\enyed\github\WebDesign\html\tema.html"><i class="fa fa-fw fa-book"></i> Témaválasztás</a>
+    <a class="active" href="C:\Users\enyed\github\WebDesign\html\hataridok.html"><i class="fa fa-fw fa-calendar"></i> Határidők</a>
+    <a href="C:\Users\enyed\github\WebDesign\html\admin.html"><i class="fa fa-fw fa-question"></i>GY.I.K.</a>
+    <a href="C:\Users\enyed\github\WebDesign\html\kapcs.html"><i class="fa fa-fw fa-envelope-open"></i> Kapcsolat</a>
+  </div>
+  <section>
+    <div class="idotarolo">
+      <h3 class="idopont">Beiratkozás a vizsgákra (június 10. - június 20.):</h2>
+        <p id="demo2"></p>
+        <h3 class="idopont">A szakdolgozat védéséig hátralevő idő (június 29. - július 1.) :</h2>
+          <p id="demo"></p>
+          <!--SCRIPTEK-->
+          <script>
+            // Bekérjük a dátumot
+            var countDownDate1 = new Date("Jun 29, 2020 9:00:00").getTime();
+
+            // Frissítünk minden másodpercben
+            var x1 = setInterval(function() {
+
+              // Lekérjük a mai dátumot
+              var now1 = new Date().getTime();
+
+              // A két időpont közötti különbség
+              var distance1 = countDownDate1 - now1;
+
+              // Számolás
+              var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+              var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
+
+              // Kiíratás
+              document.getElementById("demo").innerHTML = days1 + "nap " + hours1 + "óra " +
+                minutes1 + "perc ";
+
+              // Ha vége akkor írjon ki valamit
+              if (distance1 < 0) {
+                clearInterval(x1);
+                document.getElementById("demo").innerHTML = "Vége";
+              }
+            }, 1000);
+          </script>
+          <script>
+            // Bekérjük a dátumot
+            var countDownDate = new Date("Jun 22, 2020 9:00:00").getTime();
+
+            // Frissítünk minden másodpercben
+            var x = setInterval(function() {
+
+              // Lekérjük a mai dátumot
+              var now = new Date().getTime();
+
+              // A két időpont közötti különbség
+              var distance = countDownDate - now;
+
+              // Számolás
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              // Kiíratás
+              document.getElementById("demo2").innerHTML = days + "nap " + hours + "óra " +
+                minutes + "perc ";
+
+              // Ha vége akkor írjon ki valamit
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo2").innerHTML = "Vége";
+              }
+            }, 1000);
+          </script>
+    </div>
+    <img class="time" src="C:\Users\enyed\github\WebDesign\images\hatarback.jpg" alt="time">
+  </section>
+  </div>
+</body>
+
+</html>

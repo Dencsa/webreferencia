@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel:wght@700&display=swap');
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #142850;
+}
+h1{
+  font-family: 'Cinzel', serif;
+  color:white;
+}
+h2{
+  font-family: 'Cinzel', serif;
+  color:white;
+}
+h3{
+  font-family: 'Cinzel', serif;
+  color:white;
+}
+h4{
+  font-family: 'Cinzel', serif;
+  color:white;
+}
+p{
+  font-family: 'Cinzel', serif;
+  color:white;
+}
+* {
+  box-sizing: border-box;
+}
+a{
+  color:#0c7b93;
+}
+
+/*Header
+----------------
+*/
+.headerimg2{
+  background-color: white;
+  display:inline-block;
+  position: absolute;
+  right: 10px;
+  height: 45px;
+  width: 250px;
+  margin: 2px;
+}
+.headerimg{
+  display:inline-block;
+  position: relative;
+  height: 45px;
+  width: 300px;
+  margin: 2px;
+}
+.titletext{
+font-family: 'Bangers', cursive;
+font-size: 3.5rem;
+}
+.hero-image {
+  background-image: url("../images/background-header.png");
+  background-color: #cccccc;
+  height: 30vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/*Context
+----------------
+*/
+/*Navbar
+----------------
+*/
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #27496d;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  font-size: 15px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #684C7C;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #56237B;
+}
+
+/*index
+----------------
+*/
+.egy {
+  float: left;
+  padding: 20px;
+  width: 55%;
+  color: #FFF;
+  background-color: #142850;
+  height: 250px;
+  padding-left: 75px;/* only for demonstration, should be removed */
+}
+.ketto{
+  float: right;
+  padding: 20px;
+  width: 35%;
+  background-color: #142850;
+  height: 250px;
+}
+.ketto img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 100%;
+  height:100%;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+/*temavalasztas
+----------------
+*/
+.temal{
+  text-align: center;
+}
+.error{
+  color:red;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+.temaform{
+  font-family: 'Cinzel', serif;
+  font-size: 1.0rem;
+  color:white;
+  display:inline-block;
+  margin:15px;
+  display: none;
+  width: auto;
+  height: auto;
+}
+.btn1,
+.btn2 {
+  display: inline-block;
+  position:relative;
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+  width:65px;
+  height: 30px;
+  margin:10px;
+  background-color: #0c7b93;
+  border-color: #0c7b93;
+  color:white;
+}
+.submit{
+  color:white;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+  width:60px;
+  height: 30px;
+  background-color: #0c7b93;
+  border-color: #0c7b93;
+}
+#cname{
+  background-color: #0c7b93;
+  border-color: #0c7b93;
+  color:white;
+}
+.urlap{
+  margin:10px;
+  display: inline-block;
+  width: 45%;
+  height: auto;
+}
+.professor{
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right:15px;
+  margin:20px;
+}
+/*hataridok
+----------------
+*/
+.idopont{
+  text-decoration: uppercase;
+  color:white;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+#demo{
+  color:#13DFDD;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+#demo2{
+  color:#13DFDD;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+.szamlalo{
+  color:white;
+}
+.idotarolo{
+  display:inline-block;
+  position:relative;
+  margin:10px;;
+  width: 35%;
+  height: auto;
+}
+.time{
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  position: absolute;
+  margin:10px;
+  right:0px;
+
+}
+/*GYIK
+----------------
+*/
+.kerdes{
+  color:white;
+  font-family: 'Cinzel', serif;
+}
+.krdsz{
+  color:white;
+  font-family: font-family: 'Cinzel', serif;
+  display:none;
+}
+.tarolokerdes{
+  display: inline-block;
+  text-align: center;
+  padding: 15px 60px;
+  width:70%;
+  position: relative;
+}
+.question{
+  display: inline-block;
+  margin:10px;
+  position: absolute;
+  width: 25%;
+}
+.output{
+  display:none;
+}
+.kerdesbtn{
+  background-color: #0c7b93;
+  border-color: #0c7b93;
+}
+i{
+  color:white;
+}
+/*Kapcsolat
+----------------
+*/
+.map{
+  padding: 30px;
+  display: inline;
+}
+.kapcsolat{
+  padding: 30px;
+  display: inline-block;
+}
+.kapcsform{
+  font-family: 'Cinzel', serif;
+  font-size: 1.0rem;
+  color:white;
+  display:inline-block;
+  margin:15px;
+  padding: 15px;
+  width: auto;
+  height: auto;
+}
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 800px) {
+  /*Header
+  ----------------
+  */
+  .headerimg2{
+    background-color: white;
+    display:inline-block;
+    position: absolute;
+    right: 10px;
+    height: 25px;
+    width: 150px;
+    margin: 8px;
+  }
+  .headerimg{
+    text-align: center;
+    height: 25px;
+    width: 180px;
+  }
+  .titletext{
+    font-size: 2.25rem;
+  }
+  .navbar a {
+    float: none;
+    display: block;
+    font-size: 10.5px;
+  }
+  /*index
+  ----------------
+  */
+  .egy{
+    display: inline-block;
+    width: 100%;
+    position:relative;
+    padding: 10px;
+  }
+  .ketto{
+    display: inline-block;
+    width: 100%;
+    position:relative;
+    text-align: center;
+  }
+  /*tema
+  ----------------
+  */
+  .temaform{
+    font-size: 0.8rem;
+    color:white;
+    display:inline-block;
+    margin:15px;
+    width: 125%;
+    display: none;
+  }
+  .urlap{
+    font-size: 0.8rem;
+    margin:10px;
+    display: inline-block;
+    width: 45%;
+    height: auto;
+  }
+  .professor{
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    position: absolute;
+    right:15px;
+    margin:20px;
+  }
+  /*hataridok
+  ----------------
+  */
+  #demo{
+    text-align: center;
+    font-size: 0.55rem;
+  }
+  .idotarolo{
+    font-size: 0.55rem;
+    display:inline-block;
+    position:absolute;
+    margin:2px;
+    width:50%;
+    height: auto;
+  }
+  .time{
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    position: absolute;
+    margin:2px;
+    right:0px;
+
+  }
+  /*GYIK
+  ----------------
+  */
+.tarolokerdes{
+  font-size: 0.65rem;
+  padding: 3px 10px;
+}
+.question{
+  margin-right: 5px;
+  margin-top: 10px;
+}
+}
